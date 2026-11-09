@@ -91,14 +91,10 @@ dealkindred/
   README.md
 ```
 
-## Before publishing
+## Author
 
-- Replace demo credentials and rotate `JWT_SECRET`.
-- Add automated unit/integration tests and a production database migration.
-- Add screenshots and a short demo video to this README.
-- Deploy the frontend and API; add the live URLs here.
-- Review every skill and technology listed on your GitHub profile and only retain those you can explain confidently.
-
+- Ashish Vishwakarma @aksharma2799
+- 
 ## License
 
 MIT
