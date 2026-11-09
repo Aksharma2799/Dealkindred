@@ -43,29 +43,29 @@ Open `http://localhost:5173`. API runs at `http://localhost:4000`.
 
 ### Demo accounts
 
-| Role | Email | Password |
-|---|---|---|
-| Coupon owner | `maya@dealkindred.demo` | `DemoPass123!` |
-| Member | `arjun@dealkindred.demo` | `DemoPass123!` |
+| Role         | Email                     | Password       |
+| ------------ | ------------------------- | -------------- |
+| Coupon owner | `maya@dealkindred.demo`   | `DemoPass123!` |
+| Member       | `ashish@dealkindred.demo` | `DemoPass123!` |
 
 Change these credentials and the JWT secret before deploying anywhere public. Seed data is for local demonstration only.
 
 ## Main API routes
 
-| Method | Route | Auth | Purpose |
-|---|---|---|---|
-| POST | `/api/auth/register` | No | Create account |
-| POST | `/api/auth/login` | No | Login |
-| GET | `/api/auth/me` | Yes | Current user |
-| GET | `/api/coupons` | No | Browse active coupons |
-| POST | `/api/coupons` | Yes | Publish coupon |
-| GET | `/api/coupons/mine` | Yes | Owner's coupons |
-| GET | `/api/coupons/:id/claims` | Owner | View claimants |
-| POST | `/api/coupons/:id/claim` | Yes | Claim a coupon |
-| POST | `/api/claims/:id/redeem` | Claim owner | Mark claim redeemed |
-| GET | `/api/claims/mine` | Yes | My claims |
-| GET | `/api/affiliate` | No | Affiliate offers |
-| GET | `/api/cards` | No | Card offers |
+| Method | Route                     | Auth        | Purpose               |
+| ------ | ------------------------- | ----------- | --------------------- |
+| POST   | `/api/auth/register`      | No          | Create account        |
+| POST   | `/api/auth/login`         | No          | Login                 |
+| GET    | `/api/auth/me`            | Yes         | Current user          |
+| GET    | `/api/coupons`            | No          | Browse active coupons |
+| POST   | `/api/coupons`            | Yes         | Publish coupon        |
+| GET    | `/api/coupons/mine`       | Yes         | Owner's coupons       |
+| GET    | `/api/coupons/:id/claims` | Owner       | View claimants        |
+| POST   | `/api/coupons/:id/claim`  | Yes         | Claim a coupon        |
+| POST   | `/api/claims/:id/redeem`  | Claim owner | Mark claim redeemed   |
+| GET    | `/api/claims/mine`        | Yes         | My claims             |
+| GET    | `/api/affiliate`          | No          | Affiliate offers      |
+| GET    | `/api/cards`              | No          | Card offers           |
 
 ## Business rules
 
